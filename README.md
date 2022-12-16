@@ -23,7 +23,7 @@ $client->send(zpl: '^XA.......^XZ');
 ```php
 $label = new \Surda\Zebra\Label\DummyDataLabel();
 $printer = new \Surda\Zebra\Printer\Printer(name: 'name', host: '192.168.0.100');
-$dispatcher = new \Surda\Zebra\Dispatcher\ZebraDispatcher();
+$dispatcher = new \Surda\Zebra\Dispatcher\Dispatcher();
 $dispatcher->dispatch(label: $label, printer: $printer);
 ```
 
@@ -81,7 +81,7 @@ class LabelPrintManager
 {
     public function __construct(
         private \Surda\Zebra\Printer\IPrinter $printer, 
-        private \Surda\Zebra\Dispatcher\ZebraDispatcher $dispatcher,
+        private \Surda\Zebra\Dispatcher\Dispatcher $dispatcher,
     )
     {
     }

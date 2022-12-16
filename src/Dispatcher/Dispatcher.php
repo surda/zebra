@@ -7,7 +7,7 @@ use Surda\Zebra\Client\CommunicationException;
 use Surda\Zebra\Printer\IPrinter;
 use Surda\Zebra\Label\ILabel;
 
-class ZebraDispatcher
+class Dispatcher
 {
     /**
      * @throws DispatchException
