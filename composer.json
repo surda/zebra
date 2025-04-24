@@ -25,10 +25,10 @@
     "require-dev": {
         "nette/tester": "^2.0",
         "ninjify/nunjuck": "^0.3",
-        "phpstan/phpstan": "^1.0",
-        "phpstan/phpstan-strict-rules": "^1.0",
-        "phpstan/phpstan-nette": "^1.0",
-        "phpstan/phpstan-deprecation-rules": "^1.0"
+        "phpstan/phpstan": "^2.0",
+        "phpstan/phpstan-strict-rules": "^2.0",
+        "phpstan/phpstan-nette": "^2.0",
+        "phpstan/phpstan-deprecation-rules": "^2.0"
     },
     "conflict": {
         "nette/di": "<2.4"
