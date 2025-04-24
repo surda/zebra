@@ -13,7 +13,7 @@ class Renderer implements IRenderer
     public function __construct()
     {
         $this->latte = new Engine();
-        $this->latte->addFilter('webalize', function ($s, $charlist = NULL, $lower = TRUE) {
+        $this->latte->addFilter('webalize', function (string $s, ?string $charlist = NULL, bool $lower = TRUE) {
             return Strings::webalize($s, $charlist, $lower);
         });
     }

@@ -7,7 +7,7 @@ interface ITemplate
     public function getTemplateName(): string;
 
     /**
-     * @return array<int|string, string>
+     * @return mixed[]
      */
     public function getTemplateVariables(): array;
 }

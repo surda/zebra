@@ -6,11 +6,11 @@ class Template implements ITemplate
 {
     private string $templateName;
 
-    /** @var array<int|string, string> */
+    /** @var mixed[] */
     private array $templateVariables;
 
     /**
-     * @param array<int|string, string> $templateVariables
+     * @param mixed[] $templateVariables
      */
     public function __construct(string $templateName, array $templateVariables = [])
     {
@@ -24,7 +24,7 @@ class Template implements ITemplate
     }
 
     /**
-     * @return array<int|string, string>
+     * @return mixed[]
      */
     public function getTemplateVariables(): array
     {
